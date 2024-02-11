@@ -11,13 +11,23 @@ const Header = () => {
         <Container sx={{ flexGrow: 1 }}>
             <AppBar position="static" color="default">
                 <Toolbar>
-                    <IconButton size="large" edge="start" color="inherit" aria-label="menu" sx={{ mr: 2 }}>
+                    <IconButton
+                        size="large"
+                        edge="start"
+                        color="inherit"
+                        aria-label="menu"
+                        sx={{ mr: 2 }}
+                    >
                         <MenuIcon />
                     </IconButton>
-                    <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-                        Posts
+                    <Typography
+                        variant="h6"
+                        component="div"
+                        sx={{ flexGrow: 1 }}
+                    >
+                        Посты
                     </Typography>
-                    <Button color="inherit">Login</Button>
+                    <Button>Войти</Button>
                 </Toolbar>
             </AppBar>
         </Container>

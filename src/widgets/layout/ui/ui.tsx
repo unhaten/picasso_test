@@ -11,7 +11,7 @@ const Layout = () => {
                 <CssBaseline />
                 <Header />
                 <Box component="main" display="flex">
-                    <Box marginTop={'100px'} width="100%">
+                    <Box marginTop={'50px'} width="100%">
                         <Container>
                             <Outlet />
                         </Container>

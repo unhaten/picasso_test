@@ -6,7 +6,7 @@ const Footer = () => {
         <footer className={s.footer}>
             <Container>
                 <Typography variant="subtitle2" align="center">
-                    @all rights reserved footer
+                    @все права защищены
                 </Typography>
             </Container>
         </footer>
