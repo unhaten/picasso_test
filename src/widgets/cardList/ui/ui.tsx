@@ -56,7 +56,13 @@ const CardList = () => {
                 {data?.map((item) => (
                     <ListItem
                         key={item.id}
-                        sx={{ flexBasis: '33.333333%' }}
+                        sx={{
+                            flexBasis: {
+                                xs: '100%',
+                                md: '50%',
+                                lg: '33.333333%'
+                            }
+                        }}
                     >
                         <Post post={item} />
                     </ListItem>

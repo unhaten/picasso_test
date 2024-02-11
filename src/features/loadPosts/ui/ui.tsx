@@ -12,9 +12,27 @@ const LoadPosts: FC<LoadPostsProps> = ({ amount }) => {
         <>
             {array.map((_item: string, index) => (
                 <Stack spacing={1} sx={{ mx: 2 }} key={index}>
-                    <Skeleton variant="rounded" width={350} height={140} />
-                    <Skeleton variant="rectangular" width={350} height={60} />
-                    <Skeleton variant="rounded" width={350} height={120} />
+                    <Skeleton
+                        variant="rounded"
+                        height={140}
+                        sx={{
+                            width: { xs: '300px', md: '350px' }
+                        }}
+                    />
+                    <Skeleton
+                        variant="rectangular"
+                        sx={{
+                            width: { xs: '300px', md: '350px' }
+                        }}
+                        height={60}
+                    />
+                    <Skeleton
+                        variant="rounded"
+                        sx={{
+                            width: { xs: '300px', md: '350px' }
+                        }}
+                        height={120}
+                    />
                 </Stack>
             ))}
         </>

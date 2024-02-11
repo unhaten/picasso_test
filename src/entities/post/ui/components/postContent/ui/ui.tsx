@@ -14,7 +14,7 @@ const PostContent: FC<PostContentProps> = ({ title, body, id }) => {
                 {title.length > 20 ? title.substring(0, 25) + '...' : title}
             </Typography>
             <Divider sx={{ my: 2 }} />
-            <Typography variant="body2" color="text.secondary">
+            <Typography variant="body1" color="text.secondary">
                 {body.length > 20 ? body.substring(0, 110) + '...' : body}
             </Typography>
             <Typography

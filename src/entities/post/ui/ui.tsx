@@ -13,13 +13,19 @@ const Post: FC<PostProps> = ({ post }) => {
     return (
         <Box
             width={1}
-            height={360}
+            height={{ xs: 450, lg: 420 }}
             overflow={'hidden'}
             position={'relative'}
             component={MUICard}
+            display={{ xs: 'flex' }}
+            flexDirection={{ xs: 'column' }}
+            justifyContent={'space-between'}
+            pb={3}
         >
-            <CardImagePlaceholder />
-            <PostContent title={post.title} body={post.body} id={post.id} />
+            <Box>
+                <CardImagePlaceholder />
+                <PostContent title={post.title} body={post.body} id={post.id} />
+            </Box>
             <MoveToDetails id={post.id} />
         </Box>
     )

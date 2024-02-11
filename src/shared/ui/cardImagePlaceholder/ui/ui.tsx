@@ -1,4 +1,4 @@
-import { CardMedia } from "@mui/material"
+import { CardMedia } from '@mui/material'
 
 const CardImagePlaceholder = () => {
     return (
@@ -8,6 +8,10 @@ const CardImagePlaceholder = () => {
             image="https://bt-remont.ru/local/img/noimg.jpg"
             loading="lazy"
             alt="image"
+            sx={{
+                maxWidth: '400px',
+                margin: '0 auto'
+            }}
         />
     )
 }
