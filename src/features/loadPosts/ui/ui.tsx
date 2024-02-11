@@ -10,7 +10,7 @@ const LoadPosts: FC<LoadPostsProps> = ({ amount }) => {
 
     return (
         <>
-            {array.map((item: string, index) => (
+            {array.map((_item: string, index) => (
                 <Stack spacing={1} sx={{ mx: 2 }} key={index}>
                     <Skeleton variant="rounded" width={350} height={140} />
                     <Skeleton variant="rectangular" width={350} height={60} />
